@@ -575,6 +575,7 @@ footer {
 /* toggles */
 .scrolled {
     background-color: rgb(242, 244, 255);
+    padding-block: .5rem;
 }
 
 .del {
