@@ -18,6 +18,7 @@ window.addEventListener('scroll', ()=> {
 li.forEach((l)=> {
     l.addEventListener('click', ()=> {
         overlay.classList.add('none');
+        toggles()
     })
 })
 
