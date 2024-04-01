@@ -17,13 +17,15 @@ window.addEventListener('scroll', ()=> {
 
 li.forEach((l)=> {
     l.addEventListener('click', ()=> {
-        toggles()
+        overlay.classList.add('none');
     })
 })
 
 
 function toggles() {
-    links.classList.toggle('expand')
-    overlay.classList.toggle('none')
+    links.classList.toggle('expand');
     menu.querySelector('img').src = links.classList.contains('expand')? './Assets/CLose.svg' : './Assets/Hamburger.svg'
+    if(links.classList.contains('expand'))
+        overlay.classList.remove('none')
+    else overlay.classList.add('none')
 }
