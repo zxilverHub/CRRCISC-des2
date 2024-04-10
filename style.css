@@ -262,6 +262,19 @@ header .mobile-overlay {
     & h3 {
         margin-bottom: 1rem;
     }
+
+    .theme {
+        padding: 1rem;
+        border-radius: 20px;
+        background-color: var(--pruple);
+        & p {color: var(--white);}
+
+
+        & p:first-child {
+            margin-bottom: 1rem;
+        }
+
+    }
 }
 
 .highlights .right {
@@ -284,7 +297,7 @@ header .mobile-overlay {
 
         width: 70px;
         padding-block: .2rem;
-        background-color: purple;
+        background-color: var(--pruple);
         border-radius: 30px;
         text-align: center;
         color: var(--white);
@@ -296,6 +309,7 @@ header .mobile-overlay {
     & article:nth-child(3) h3::before { content: "3"; }
     & article:nth-child(4) h3::before { content: "4"; }
     & article:nth-child(5) h3::before { content: "5"; }
+    & article:nth-child(6) h3::before { content: "6"; }
 
     .text { max-width: 60ch; }
 }
@@ -444,6 +458,25 @@ footer {
             }
         }
         h5 { color: var(--white); }
+
+        .gmail {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: .5rem;
+
+            & svg {
+                width: 20px;
+            }
+            & span {
+                max-width: 35ch;
+            }
+        }
+
+        .website a {
+            color: var(--pruple);
+            text-decoration: underline;
+        }
     }
 }
 
